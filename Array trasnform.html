@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array trasnform</title>
+</head>
+<body>
+    <script>
+
+        //Array trasnform
+        //map, untuk melakukan transform tiap value dan menghasilkan array result
+        //reduce, melakukan transform dengan menggunakan value array dan value selanjutnya, dilanjutkan ke iteasi selanjutnya
+        //reduceRight, sama dengan reduce, tapi dari kanan
+
+            const name = ["Andra", "Elja", "Prama"]
+            const nameUpper = name.map(value => value.toUpperCase())
+            console.log(nameUpper)
+
+            const nameReduce = name.reduce((before, value) => before + " " + value)
+            console.log(nameReduce)
+
+            const nameReduceRight = name.reduceRight((before, value) => before + " " + value)
+            console.log(nameReduceRight)
+
+    </script>
+</body>
+</html>
